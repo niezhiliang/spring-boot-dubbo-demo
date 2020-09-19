@@ -1,0 +1,14 @@
+dubbo:
+  application:
+    name: dubbo-provider
+  protocol:
+    name: dubbo
+    port: 28888
+    host: 127.0.0.1
+  scan:
+    base-packages: cn.isuyu.dubbo.demo.common.service
+  registry:
+    address: zookeeper://127.0.0.1:2181
+
+#log4j:
+#  rootLogger: DEBUG,Console
